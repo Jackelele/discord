@@ -1,0 +1,16 @@
+.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeMin-3Yqxk5.grow-2T4nbg {
+    background-color: #111214 !important;
+    color: #a5abb3 !important;
+    font-weight: lighter !important;
+    text-align: center !important;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeMin-3Yqxk5.grow-2T4nbg:hover {
+    background-color: red !important;
+    color: white !important;
+}
+
+/*
+* Created By .dake.
+*/
