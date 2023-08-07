@@ -18,4 +18,5 @@ This repository contains all bits and pieces of Vencord, Aliucord that I use. I'
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/Pronouns.css");
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/ReadAll-ColourFix.css");
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/UserPanelCollapse.css");
+@import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/OnekoMessageBar.css");
 ```
