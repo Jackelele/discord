@@ -1,0 +1,155 @@
+.channelTextArea-1FufC0::before {
+    /* duration of wakeup and go to sleep animations (in seconds) */
+    /* set to 2.65s to match windows cursor blink rate */
+    --wakeup-duration: 2s;
+    /* duration of sleeping and typing animations */
+    --sleep-duration: calc(var(--wakeup-duration) / 5 * 2);
+    /* typing animation: run, runleft, alert, or wallscratch */
+    --typing-animation: alert;
+
+    content: '';
+    width: 32px;
+    height: 32px;
+    top: -29px;
+    right: 10px;
+    /* change right to left to move oneko to the left */
+    position: absolute;
+    image-rendering: pixelated;
+    background-image: url('https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif');
+    animation: sleep var(--sleep-duration) infinite;
+}
+
+.channelTextArea-1FufC0:hover::before {
+    animation: var(--wakeup-duration) 1 forwards wakeup;
+}
+
+.channelTextArea-1FufC0:not(:hover)::before {
+    animation: var(--wakeup-duration) 1 forwards gotosleep,
+        var(--sleep-duration) var(--wakeup-duration) infinite sleep;
+}
+
+.channelTextArea-1FufC0:has(.editor-H2NA06:focus)::before {
+    animation: var(--wakeup-duration) 1 forwards wakeup,
+        var(--sleep-duration) var(--wakeup-duration) infinite var(--typing-animation);
+}
+
+@keyframes sleep {
+
+    0%,
+    50% {
+        background-position: -64px 0;
+    }
+
+    50.00001%,
+    100% {
+        background-position: -64px -32px;
+    }
+}
+
+@keyframes alert {
+
+    0%,
+    50% {
+        background-position: -224px -96px;
+    }
+
+    50.00001%,
+    100% {
+        background-position: -96px -96px;
+    }
+}
+
+@keyframes run {
+
+    0%,
+    50% {
+        background-position: -96px 2px;
+    }
+
+    50.00001%,
+    100% {
+        background-position: -96px -30px;
+    }
+}
+
+@keyframes runleft {
+
+    0%,
+    50% {
+        background-position: -128px -62px;
+    }
+
+    50.00001%,
+    100% {
+        background-position: -128px -94px;
+    }
+}
+
+@keyframes wallscratch {
+
+    0%,
+    50% {
+        background-position: -64px -62px;
+    }
+
+    50.00001%,
+    100% {
+        background-position: -64px -94px;
+    }
+}
+
+@keyframes wakeup {
+
+    0%,
+    20% {
+        background-position: -160px 0;
+    }
+
+    20.00001%,
+    40% {
+        background-position: -192px 0;
+    }
+
+    40.00001%,
+    60% {
+        background-position: -224px 0;
+    }
+
+    60.00001%,
+    80% {
+        background-position: -96px -64px;
+    }
+
+    80.00001%,
+    100% {
+        background-position: -96px -96px;
+    }
+}
+
+@keyframes gotosleep {
+
+    0%,
+    20% {
+        background-position: -96px -96px;
+    }
+
+    20.00001%,
+    40% {
+        background-position: -96px -64px;
+    }
+
+    40.00001%,
+    60% {
+        background-position: -224px 0;
+    }
+
+    60.00001%,
+    80% {
+        background-position: -192px 0;
+    }
+
+    80.00001%,
+    100% {
+        background-position: -160px 0;
+    }
+}
