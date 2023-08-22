@@ -1,6 +1,6 @@
-# Vencord
+# Discord bits and pieces
 
-This repository contains all bits and pieces of Vencord, Aliucord that I use. I've given credit where needed :) 
+This repository contains all bits and pieces of Discord, Vencord, Aliucord that I use. I've given credit where needed :) 
 
 
 # Credits
