@@ -20,4 +20,5 @@ This repository contains all bits and pieces of Discord, Vencord, Aliucord that 
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/UserPanelCollapse.css");
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/OnekoMessageBar.css");
 @import url("https://raw.githubusercontent.com/Jackelele/vencord/main/snippets/BetterProfiles.css");
+@import url("https://discord-fluent.siris.me/css/fluent-3d.css")
 ```
